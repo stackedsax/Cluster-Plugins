@@ -39,9 +39,9 @@ if(!class_exists("EasyColumns")){
 			if (!defined('EZC_PLUGIN_NAME'))
 				define('EZC_PLUGIN_NAME', trim(dirname(plugin_basename(__FILE__)), '/'));
 			if (!defined('EZC_PLUGIN_DIR'))
-				define('EZC_PLUGIN_DIR', WP_PLUGIN_DIR . '/' . EZC_PLUGIN_NAME);
+				define('EZC_PLUGIN_DIR', plugins_url() . '/' . EZC_PLUGIN_NAME);
 			if (!defined('EZC_PLUGIN_URL'))
-				define('EZC_PLUGIN_URL', WP_PLUGIN_URL . '/' . EZC_PLUGIN_NAME);
+				define('EZC_PLUGIN_URL', plugins_url() . '/' . EZC_PLUGIN_NAME);
 			if (!defined('EZC_PLUGIN_VERSION'))
 				define('EZC_PLUGIN_VERSION','2.1.1');
 			if (!defined('EZC_PLUGIN_TYPE'))
